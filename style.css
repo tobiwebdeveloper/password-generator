@@ -237,4 +237,10 @@ cursor: pointer;
     .generator-grid {
         grid-template-columns: 1fr;
     }
+    .generator-output {
+        min-height: 0;
+    }
+    .generator-settings {
+        min-height: 0;
+    }
 }
