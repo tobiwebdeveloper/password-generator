@@ -242,5 +242,6 @@ cursor: pointer;
     }
     .generator-settings {
         min-height: 0;
+        gap: 42px;
     }
 }
