@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <main class="password-generator">
+
+    <header class="generator-header">
+        <div class="generator-heading">
+            <span class="generator-eyebrow">Security Tool</span>
+            <h1>Password Generator</h1>
+            <p>Create a secure password in seconds.</p>
+        </div>
+
+        <span class="generator-status">Ready</span>
+    </header>
+
+    <div class="generator-grid">
+
+        <section class="generator-output">
+
+            <div class="section-header">
+                <span class="section-label">Generated Password</span>
+                <button class="copy-button" id="copy-btn">
+                    Copy
+                </button>
+            </div>
+
+            <div class="password-display">
+                <span class="password-value" id="password">
+                    Your password
+                </span>
+            </div>
+
+            <div class="output-footer">
+                <span class="password-strength">Password strength</span>
+                <span class="strength-value" id="strength-value">Strong</span>
+            </div>
+
+        </section>
+
+        <section class="generator-settings">
+
+            <div class="section-header">
+                <span class="section-label">Password Settings</span>
+            </div>
+
+            <div class="setting setting-length">
+
+                <div class="setting-header">
+                    <label for="length">Password Length</label>
+                    <span class="setting-value" id="length-value">16</span>
+                </div>
+
+                <input
+                    class="length-slider"
+                    type="range"
+                    id="length"
+                    min="4"
+                    max="32"
+                    value="16"
+                >
+
+            </div>
+
+            <div class="settings-options">
+
+                <label class="option">
+                    <input type="checkbox" id="uppercase" checked>
+                    <span class="setting-value">Uppercase</span>
+                </label>
+
+                <label class="option">
+                    <input type="checkbox" id="lowercase" checked>
+                    <span class="setting-value">Lowercase</span>
+                </label>
+
+                <label class="option">
+                    <input type="checkbox" id="numbers" checked>
+                    <span class="setting-value">Numbers</span>
+                </label>
+
+                <label class="option">
+                    <input type="checkbox" id="symbols">
+                    <span class="setting-value">Symbols</span>
+                </label>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <div class="generator-actions">
+        <button class="generate-button" id="generate-btn">
+            Generate Password
+            <span class="generate-icon">→</span>
+        </button>
+    </div>
+
+</main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;700;800&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    background: radial-gradient(circle, rgba(0,0,0,0.08) 1px, transparent 1px),
+    #f3efef;
+    background-size: 20px 20px;
+    padding: 40px;
+}
+h1 {
+    font-size: 2.5rem;
+    letter-spacing: -0.04em;
+    font-family: "Raleway";
+}
+p {
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+    
+}
+input[type ="checkbox"] {
+    accent-color: #ffffff;
+    width: 1.1rem;
+    height: 1.1rem;
+    
+}
+
+button {
+    border: none;
+    border-radius: 999px;
+
+    padding: 0.7rem 1.1rem;
+
+    background: #f7fff7;
+    color: #0a0a0a;
+
+    font-family: inherit;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        color 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.password {
+    font-size: 2.5rem;
+    color: #e4e4e4;
+    display: flex;
+    
+}
+
+.password-generator {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem;
+    background: linear-gradient(#181818, #0e0e0e);
+    color: #f7fff7;
+    border-radius: 2.5rem;
+    max-width: 1000px;
+    width: 100%;
+    box-shadow: 4px 4px rgba(0,0,0,0.04);
+}
+
+.generator-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 1rem;
+}
+
+.generator-output {
+    min-height: 280px;
+    padding: 1.5rem;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(#141414, #161616);
+    border: 1px solid rgba(247, 255, 247, 0.1);
+    border-radius: 1.5rem;
+}
+.generator-settings {
+     background: linear-gradient(#141414, #161616);
+    border: 1px solid rgba(247, 255, 247, 0.1);
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    min-height: 280px;
+     justify-content: space-between;
+}
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.settings-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.generator-actions {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(247, 255, 247, 0.1);
+}
+/* Header */
+
+.generator-header {
+display: flex;
+flex-direction: column;
+ position: relative;
+}
+
+.generator-heading {
+display: flex;
+flex-direction: column;
+gap: 1.1rem;
+}
+
+.generator-eyebrow {
+text-transform: uppercase;
+
+}
+
+.generator-status {
+color: #84f064;
+font-weight: bold;
+  position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+/* Output */
+
+.section-label {
+ color: #888;
+ font-style: italic;
+ letter-spacing: 0.02rem;
+}
+
+.copy-button {
+background: #1f1f1f;
+border: #333 1px solid;
+color: #f7fff7;
+}
+
+
+
+.password-value {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #e4e4e4;
+    letter-spacing: 0.03em;
+    word-break: break-all;
+}
+
+.output-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(247, 255, 247, 0.08);
+}
+
+.password-strength {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.strength-value {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #84f064;
+}
+
+
+/* Settings */
+
+
+
+
+.setting-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.setting-value {
+
+}
+
+.length-slider {
+ width: 100%;
+    appearance: none;
+    height: 4px;
+    background: #333;
+    border-radius: 999px;
+}
+.length-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #f7fff7;
+    cursor: pointer;
+}
+.option {
+display: flex;
+align-items: center;
+gap: 10rem;
+color: #888;
+justify-content: space-between;
+cursor: pointer;
+}
+.option:has(input:checked) {
+    color: #ffffff;
+}
+
+@media (max-width: 768px){
+    .generator-grid {
+        grid-template-columns: 1fr;
+    }
+}
