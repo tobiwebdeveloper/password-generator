@@ -53,7 +53,9 @@ copyBtn.textContent = "Copy";
 }
 function checkPasswordStrength() {
     let score = 0;
-
+    if (lengthInput.value <= 12) {
+            score -= 1;
+        } 
     if (lengthInput.value >= 12) {
         score += 1;
     } 
